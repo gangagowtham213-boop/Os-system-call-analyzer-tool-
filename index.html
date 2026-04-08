@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>OS System Call Analyzer</title>
-</head>
-<body style="text-align:center; font-family:Arial;">
+<title>OS Analyzer</title>
 
+<style>
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
     <h1>OS System Call Analyzer Tool</h1>
+
     <p>This project analyzes system calls using Python and strace.</p>
 
     <h2>Project Files</h2>
-    <ul>
-        <li>analyzer.py</li>
-        <li>program.c</li>
-        <li>test.txt</li>
-    </ul>
+    <p>analyzer.py | program.c | test.txt</p>
 
-    <h3>How to Run</h3>
-    <p>Run in Linux terminal:</p>
+    <h2>How to Run</h2>
     <pre>
 gcc program.c -o program
 python3 analyzer.py
     </pre>
+
+    <button onclick="alert('Run this project in Linux Terminal')">
+        Run Project
+    </button>
+</div>
 
 </body>
 </html>
